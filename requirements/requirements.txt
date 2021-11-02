@@ -3,12 +3,13 @@ Logo: requirements/logo.png
 
 Color Scheme: https://www.canva.com/colors/color-palettes/staring-into-space/
 
-Required Elements
+Required Elements:
+
 Sign Up for Discounts Form
-Checkout Form
-YouTube Video - https://www.youtube.com/watch?v=AAzY28C8Syc
+Adam - Checkout Form
+Adam - YouTube Video - https://www.youtube.com/watch?v=AAzY28C8Syc
 At least 4 images
 Homepage
-Product Page
+Jake- Product Page
 
 You can add as many pages you want and those required elements can live wherever you feel works best. 
