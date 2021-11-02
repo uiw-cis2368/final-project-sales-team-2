@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+    <body class="">
+        <div id="page-wrapper">
+            <!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html"></a>
+                        <img src="requirements/logo.png" alt="" width="100" height="50">
+                    </h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option 1</a></li>
+											<li><a href="#">Option 2</a></li>
+											<li><a href="#">Option 3</a></li>
+											<li><a href="#">Option 4</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+                <div class="row">
+                    <div class="column left" style="font-size: 15px;">
+                        <div class="w3-content">
+                            <div class="w3-content w3-display-container">
+                                <img class="mySlides" src="requirements/saber1.jpg" style="width: 50%">
+                                <img class="mySlides" src="requirements/saber2.jpg" style="width:50%">
+                                <img class="mySlides" src="requirements/saber3.jpg" style="width:50%">
+                                <img class="mySlides" src="requirements/saber4.jpg" style="width:50%">
+                              
+                                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                              </div>
+                            </div>
+                            <script>
+                                var slideIndex = 1;
+                                showDivs(slideIndex);
+                                
+                                function plusDivs(n) {
+                                  showDivs(slideIndex += n);
+                                }
+                                
+                                function showDivs(n) {
+                                  var i;
+                                  var x = document.getElementsByClassName("mySlides");
+                                  if (n > x.length) {slideIndex = 1}
+                                  if (n < 1) {slideIndex = x.length}
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                  }
+                                  x[slideIndex-1].style.display = "block";  
+                                }
+                                </script>
+                    </div>
+                    <div class="column right" style="font-size: 15px;">
+                        <h2>Force Saber sci-fi sword replica</h2>
+                        <p>Something from the movie star wars</p>
+                    </div>
+                  </div>
+                  
+        </div>
+
+
+
+    </body>>
+</html>
