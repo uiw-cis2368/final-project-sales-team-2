@@ -12,6 +12,9 @@
   float: left;
   width: 50%;
   }
+  .text-center {
+    text-align: center;
+  }
   .cart-btn {
   display: inline-block;
   background-color: #7DC855;
@@ -22,6 +25,15 @@
   padding: 12px 30px;
   transition: all .5s;
 }
+.items{
+  min-height: 300px;
+  
+  border: 2px solid red;
+}
+.widgetcon{
+  margin-top: 0px;
+}
+
 
 /* Clear floats after the columns */
   .row:after {
@@ -39,9 +51,9 @@
                     </h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">e</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#">s</a>
 								<ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
 									<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -57,7 +69,7 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="elements.html">s</a></li>
 							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -67,17 +79,43 @@
                     
                       <div class="w3-content">
                         <div class="w3-content w3-display-container">
-                          <img class="mySlides" src="requirements/saber1.jpg" style="width:100%">
-                          <img class="mySlides" src="requirements/saber2.jpg" style="width:100%">
-                          <img class="mySlides" src="requirements/saber3.jpg" style="width:100%">
-                          <img class="mySlides" src="requirements/saber4.jpg" style="width:100%">
-                        
-                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                          <div class="items">
+                            <img class="mySlides" src="requirements/saber1.jpg" style="width:100%">
+                            <img class="mySlides" src="requirements/saber2.jpg" style="width:100%">
+                            <img class="mySlides" src="requirements/saber3.jpg" style="width:100%">
+                            <img class="mySlides" src="requirements/saber4.jpg" style="width:100%">
+
+                          </div>
+                          <div class="widgetcon">
+                            <button class="w3-button w3-black w3-display-left" style="margin-left: 300px;" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right" style="margin-left: 0px;" onclick="plusDivs(1)">&#10095;</button>
+  
+                            <div class="widgets">
+                              <div class="row" style="background-color: #00000033;"> 
+                                  <img src="requirements/saber1.jpg" style="width: 25%;" onclick= "setSlide(1)">
+                                  <img src="requirements/saber2.jpg" style="width: 25%;" onclick= "setSlide(2)">
+                                  <img src="requirements/saber3.jpg" style="width: 25%;" onclick= "setSlide(3)">
+                                  <img src="requirements/saber4.jpg" style="width: 25%;" onclick= "setSlide(4)">
+                              </div>
+                          </div>
+                         
+    
+                          
+                            
+                           
+                          </div>
+                          
                           <script>
                             var slideIndex = 1;
                             showDivs(slideIndex);
+
+                            function setSlide(n) {
+                              slideIndex = n
+                              showDivs(slideIndex);
+                            }
                             
+
+
                             function plusDivs(n) {
                               showDivs(slideIndex += n);
                             }
@@ -97,11 +135,16 @@
                       </div>
                     </div>
                     <div class="column" style="font-size: 20px; align-self: center;" >
-                      <span>Fantasy sword</span>
+                      <span style="font-family: sans-serif; color: chartreuse;">Fantasy sword</span>
                       <h2 style="font-family: sci-fi">Force Saber sci-fi sword replica</h2>
-                      <p style = "text-align: center;"> 120.00$ </p>
-                      <p>Enjoy a nice vintage state of the art custom light sword from the hit franchise "Space Crusade"</p>
-                      <button type="button" class="cart-btn" style="background-color: rgb(0, 255, 115); width: 125px; height: 50px; align-content: center;">Add to cart</button>
+                      
+                      <p style ="text-align: center; font-weight: bold;"> 120.00$ </p>
+                      <hr>
+                      <p style="font-weight: normal;">Enjoy a nice vintage state of the art custom light sword from the hit franchise "Space Crusade"</p>
+                      <div class = "text-center">
+                        <button type="button" onclick="location." class="cart-btn" style="background-color: rgb(0, 255, 115); width: 200px; height: 50px; align-content: center;" >Add to cart</button>
+                      </div>
+                      
                       <p>Something from the movie star wars</p>
                     </div>
                   </div>
