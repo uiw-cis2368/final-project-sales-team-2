@@ -138,7 +138,7 @@ table {
 }
 
 body {
-  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: auto;
 }
 
 mark {
@@ -4259,3 +4259,4 @@ body.is-touch #banner {
     padding: 0;
   }
 }
+/* Style Signup Sheet styles */
