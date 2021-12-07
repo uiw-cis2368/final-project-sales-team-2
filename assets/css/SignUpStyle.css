@@ -753,5 +753,9 @@ p.copyright a:hover {
 #header nav ul li > ul {
   display: none;
 }
-
+.button.primary {
+  background-color: #e44c65;
+  box-shadow: none;
+  color: #ffffff !important;
+}
 /*-- /responsive design --*/
